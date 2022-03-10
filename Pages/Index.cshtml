@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<p>Quickly build Web apps with ASP.NET Core that authenticate using Microsoft identity platform and Azure Active Directory.</p>
+
+<p><small>(It's faster than riding OC Transpo route 61 from Stittsville Main to Tunney's Pasture Station!)</small></p>
+
+<div>
+    <code>
+        # Pre-requisite: dotnet is installed<br>
+        dotnet new webapp -o <var>MyAwesomeApp</var> --auth SingleOrg --client-id "<var>YOUR_CLIENT_ID</var>" --tenant-id "<var>YOUR_TENANT_ID</var>" --domain "<var>YOUR_DOMAIN</var>"<br>
+        dotnet watch run --project <var>MyAwesomeApp</var>
+    </code>
+</div>
